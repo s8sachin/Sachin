@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bangalore Street Food</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	
+<style type="text/css">
+body{
+	background-color: #292c33;
+}
+	#ind1{
+	padding: 10px;
+	background-color: aliceblue;
+	color:unset;
+	border:solid;
+}
+#vv1{
+	padding: 10px;
+	background-color: aliceblue;
+	color:#cd853f ;	
+	border:solid;
+}
+#ko1{
+	padding: 10px;
+	background-color: aliceblue;	
+	color: unset;
+	border:solid;
+}
+.vvDesc{
+	padding: 20px;
+}
+#a1{
+	background-color:#f5f5f5;
+}
+#h1{
+	background-color:#f5f5f5;
+}
+#r1{
+	background-color:#f5f5f5;
+}
+.footer{
+		background-color:white;
+	}
+</style>
+
+<body>
+<div class="container" >
+	<div class="row" style="padding:50px">
+		<div class="col-xs-5">
+			<img src="icons/blr-street-food-logo.png" onclick="homeDisp()"" onmouseover="change(this)" onmouseout="revert(this)">
+		</div>
+		<div class="col-xs-1" onclick="aboutDisp()" id="abtNav">
+			<a> About us</a>
+		</div>
+		<div class="col-xs-1">
+			<a> blog</a>
+		</div>
+		<div class="col-xs-1">
+			<a> Event</a>
+		</div>
+		<div class="col-xs-1">
+			<a> Speaking</a>
+		</div>
+		<div class="col-xs-1">
+			<a> Sponser</a>
+		</div>
+		<div class="col-xs-1">
+			<a> Venue</a>
+		</div>
+		<div class="col-xs-1" onclick="registerDisp()" id="regNav">
+			<a> Register</a>
+		</div>
+	</div>
+</div>
+<div id="h1" class="container" >
+<div>
+	<marquee>
+	<img src="images/slider1.jpg">
+	<img src="images/slider4.jpg">
+	<img src="images/slider5.jpg">
+	<img src="images/slider6.jpg">
+	</marquee>
+</div>
+<div class="container">
+	<div class="row">
+	<div class="col-xs-4" ><div id="ind1" >Indiranagar</div></div>
+	<div class="col-xs-4" ><div id="vv1" >V V Puram</div></div>
+	<div class="col-xs-4" ><div id="ko1" >Koramangala</div></div>
+	</div>
+</div>
+<div class="container"  style="display:none" id="inDetails">
+	<div class="row">
+		<div class="col-xs-8">
+			<p>
+				Like the area surrounding any college, the streets around Indiranagar are dotted with a variety of
+				eateries and street food stalls patronised for good reason by the students whom they serve.
+				Here are a few that you could check out:
+			</p>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Hatti Kaapi – Superlative filter coffee. Best of South-Indian tiffin snacks – Maddur Vada, Masala Bun, Vada Pao, Idly, Vada. Hazelnut Cold Coffee.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Khawa Karpo – Hole-in-the-wall Tibetan joint frequented by students. Thukpa, Honey Potato Wedges, Ting-Mo and Chicken Shap-tak.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Juice Junction – Freshly prepared fruit juices, fruit salad.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Soori Chats – South-Indian Bhel Puri.</p>
+				</div>
+			</div>	
+			</div>
+		</div>
+		<div class="col-xs-8">
+			<p>
+			String them together to form the Indiranagar. This area is full of eateries of varying budgets. Among
+			the mid-range restaurants you could also try Meghana Biryani for Andhra style biryani, Empire
+			Restaurant for Dosa Chicken and Truffles Ice and Spice for continental cuisine.
+		</p>
+		</div>
+	<div class="row" class="col-xs-8">
+		
+	</div>
+</div>	
+
+<div class="container"  style="display:block" id="vvDetails">
+	<div class="row">
+			<div class="col-xs-8">
+			<p>
+				VV Puram is Bangalore’s most famous Food Street and a complete must-do for anyone visiting or
+				staying in Bangalore. Till you get there and try the food, you really don’t know what you’re missing.
+				This guide attempts to cover almost each of the outlets starting from when one enters the street at
+				Sajjan Rao Circle. Before that a few basic guidelines about this food street and what we suggest
+				you keep in mind while planning this gastronomical adventure.
+			</p>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>To taste maximum number of dishes and make the most of this trail, do it in a group of 8 or more
+					people (who do not mind sharing food). There is so much on offer that just a couple of bites of
+						the top items at each joint will fill you up to a point when the senses may crave but the stomach
+					will refuse to take in any more. No point eating one or two items and heading back, we say.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>VV Puram comes alive around 7:30 – 8:00 in the evening. While some of the shops start serving
+					from 5:30-6:00 PM onwards, all of them are ready only by 7:00 PM.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Weekends are extremely crowded so get there a little early. The crowds can mean having to wait
+					a fair bit of time at some of the shops.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Finding parking is not extremely easy on weekends – try one of the roads leading into Sajjan Rao
+					Circle if you can’t find parking around the circle itself.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Do use dustbins to dispose of the plates etc. Most shops will have dustbins placed at prominent
+					locations.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-right-arrow.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Try and avoid wasting food.</p>
+				</div>
+			</div>	
+			</div>
+			<div class="col-xs-4">
+				<p>Now a quick overview of the food before we get into the specifics of what each of the joints serve.
+					There are about 15 outlets serving different types of food (listed below outlet by outlet). We would
+					classify the food varieties into the following categories in decreasing order of specialty – from must-
+					have to do-try to not-what-this-is-known-for. That is not to say that food listed in the last category is
+					not good – it’s just not what this street is known for. Also, some of those in the last category are
+					relatively new additions to this otherwise old food street, and purists that we are, we would like to
+				call them out.</p>
+			</div>
+		</div>
+		<div class="row">
+				<p>Not-what-this-street-is-known-for but can-try shops because their food is good:</p>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Mumbai Pao Bhaji, Dabeli, Tawa Pulao,</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Punjabi chaats (pani puri, papdi chaat, bread pakora, cutlets)</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Paranthas / Rajasthani roti sabzi,</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Lassi / Rose Milk / Kulfi</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Chinese</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Sandwiches</p>
+				</div>
+				<div class="col-xs-1">
+				<img src="icons/icon-bullet.png">
+				</div>
+				<div class="col-xs-11">
+				<p>Mumbai Pao Bhaji, Dabeli, Tawa Pulao,</p>
+				</div>
+			</div>		
+</div>
+
+<div class="container"  style="display:none" id="koDetails">
+	<div class="row">
+		<div class="col-xs-8">
+			<p>
+				Koramangala is another of Bangalore’s hip and happening party and food districts, housing
+				restaurants specializing in any cuisine you can think of. It is 4 kms from Royal Orchid down a
+				straight road – the intermediate ring road. Koramangala has super interesting street-side joints,
+				standing shoulder to shoulder with their more sophisticated, up-market cousins. An interesting
+				Rajasthani place, a hole-in-the-wall Tibetian joint, Bhajji Carts, Pao Bhaji vans ... lots to explore in
+				this part of the city.
+			</p>
+			<p>
+				(Quick advice on the traffic scene. Getting from Royal Orchid to Koramangala can take anywhere
+				from 7 mins to 45 mins – it is a simple function of the time of day and traffic scenario. During office
+				hours (read 8:30 AM – 10:30 AM and 5:30 PM – 7:30 PM) the 45 min time frame is what you
+				should budget for.)
+			</p>
+			<p>
+				It’s worth splitting Koramangala into two sections. The area around Jyoti Nivas College has a
+				buzzing student vibe. Then there is 80 ft Rd Koramangala that has what could be called the
+				Koramangala Food Street for the string of street-side food stalls it hosts. (Koramangala actually
+				had a food street (read about it here) which was relocated by the Municipal authorities a few
+				months ago. There is hope that the authorities will allow the vendors to come back and set up the
+				street the way it was but for now all the vendors have relocated from there.)
+			</p>
+		</div>
+		<div class="col-xs-4">
+			<p>Must-have:</p>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Special South-Indian fare – Akki Roti / Ragi Roti / Paniyaram or paddus / Kodu Bele</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Special South-Indian sweet paranthas – Dal / Hollige</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Hot Jalebis / Gulab Jamun</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Bhajjis and Bondas</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Gulkun Ice-cream</p>
+				</div>
+			</div>
+			<p>Do-Try</p>	
+			<div class="row">
+				<div class="col-xs-1">
+				<img src="icons/icon-ok.png">					
+				</div>
+				<div class="col-xs-10">
+					<p>Regular South-Indian Tiffin – Dosas and Uttapams (made with generous amounts of pure ghee),
+					Idli, Vadas, Lemon Rice, Curd Rice, Vermicelli Upma</p>
+				</div>
+			</div>	
+			</div>	
+		</div>
+</div>
+
+</div>
+
+
+<div id="a1" style="display:none" class="container"  >
+	<center><img src="images/slider-sample-with-text.png"></center>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<p>
+				Streets are the lifeline of a city – like veins running across leaves, they criss-cross a city giving it
+					shape and character. The life and stories on its streets are a password to the character of a city ...
+				its essence, culture, history, architecture, food and its issues. The best way to get to know a city is
+				to walk around its lanes and by-lanes and explore its streets. BLR Street is an attempt to capture
+				the life and times of the streets of cities across the world, starting with India.
+				</p>
+				<p>
+				Local food, especially street food and popular local eateries are perhaps the best gastronomical
+				introduction to a city – its ingredients, flavours and spices are the easiest way to get under the skin
+				or umm ... into the stomach of a city. However, discovering the best local places to eat in a city is
+					best done with a foodie friend who knows the small nooks and joints that serve exceptionally good
+				food. That is the inspiration behind BLR Street. To be that local foodie friend who helps travelers
+				find the best of local and street food, the joints where food and conversation flow and the cultural
+				nuances of the city come the fore.
+				</p>
+				<p>
+				The joints we cover include the hole-in-the-wall local eateries that are difficult to spot, famous
+				street food vendors and small, cozy cafes that serve as a perfect meeting spot for adda sessions,
+					quick bites, refreshing chai, addictive coffee and superb snack food.
+				</p>
+				<p>
+					The best local eateries in each city is what Talking Street will talk to you about, peppered with
+					posts about the vendors, stall-owners, peddlers and pavement dwellers. Happy listening!
+					P.S. Here’s a perfect introduction to us, courtesy Village Talkies.
+				</p>
+			</div>
+			<div class="col-xs-4">
+				<p>Team</p>
+				<p>Anup Ramp</p>
+				<p>Founder</p>
+				<p>Janardan Joshi</p>
+				<p>Co-Founder</p>
+				<p>Kiran Mathur</p>
+				<p>Mentor</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="r1" style="display:none" class="container" >
+	<form>
+		<p>First name</p><input type="text" name="">
+		<p>Last name</p><input type="text" name="">
+		<p>Email</p><input type="text" name="">
+		<p>Password</p><input type="password" name="">
+		<p>Confirm Password</p><input type="password" name="">
+		<p>Phone No.</p><input type="text" name="">
+	</form>
+		<button class="btn" >Submit</button>
+</div>
+
+<center>
+<div class="footer">
+	For an outlet by outlet guide on what to eat where, head here – The Ultimate VV Puram Street
+	food Experience Guide by BLR Street Food.
+</div></center>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	function homeDisp(){
+	document.getElementById('h1').style.display='block'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('r1').style.display='none'
+	document.getElementById('regNav').style.display='block'
+	document.getElementById('abtNav').style.display='block'	
+};
+	function aboutDisp(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('a1').style.display='block'
+	document.getElementById('r1').style.display='none'
+	document.getElementById('abtNav').style.display='none'	
+	document.getElementById('regNav').style.display='block'
+};
+	function registerDisp(){
+	document.getElementById('h1').style.display='none'
+	document.getElementById('a1').style.display='none'
+	document.getElementById('r1').style.display='block'
+	document.getElementById('regNav').style.display='none'
+	document.getElementById('abtNav').style.display='block'	
+};
+	jQuery('.btn').click(function(){
+		alert('Registered..!!');
+	});
+
+	 jQuery('#ind1').click(function(){
+		 jQuery('#inDetails').show();
+		 jQuery('#ind1').css('color', '#cd853f').css('border','solid');
+		 jQuery('#vvDetails').hide();
+		 jQuery('#vv1').css('color', 'unset').css('border','solid');
+		 jQuery('#koDetails').hide();
+		 jQuery('#ko1').css('color', 'unset').css('border','solid');
+		});
+		jQuery('#vv1').click(function(){
+		 jQuery('#inDetails').hide();
+		 jQuery('#ind1').css('color', 'unset').css('border','solid');
+		 jQuery('#vvDetails').show();
+		 jQuery('#vv1').css('color', '#cd853f').css('border','solid');
+		 jQuery('#koDetails').hide();
+		 jQuery('#ko1').css('color', 'unset').css('border','solid');
+		});
+		jQuery('#ko1').click(function(){
+		 jQuery('#inDetails').hide();
+		 jQuery('#ind1').css('color', 'unset').css('border','solid');
+		 jQuery('#vvDetails').hide();
+		 jQuery('#vv1').css('color', 'unset').css('border','solid');
+		 jQuery('#koDetails').show();
+		 jQuery('#ko1').css('color', '#cd853f').css('border','solid');
+		});
+		function change(x){
+		x.src='icons/blr-street-food-logo-white.png';
+	}
+	function revert(x){
+		x.src='icons/blr-street-food-logo.png';
+	}
+
+</script>
+</body>
+</html>
+ 
