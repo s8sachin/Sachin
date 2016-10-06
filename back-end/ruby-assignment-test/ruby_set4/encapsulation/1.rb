@@ -28,6 +28,9 @@ class Message
 	def sendPersonalMessage
 		personalChat(message)
 	end
+	def sendSecureMessage
+		secureChat("This is confidential")
+	end
 
 	def groupChat(message)
 		puts "This is a Public Group"
@@ -55,9 +58,7 @@ class User < Message
 		puts "Welcome User"
 	end
 
-	def sendSecureMessage
-		secureChat("This is confidential")
-	end
+	
 
 	def sendPersonalMessage
 		personalChat("Hi, how are you?")

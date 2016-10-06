@@ -25,7 +25,7 @@ class Lottery
   
   	# puts "you	r gift: "
     # gifts.value '3'
-gifts = Hash[1 => "Gift 1",
+gifts = {1 => "Gift 1",
 			 2 => "Gift 2",
 			3 => "Gift 3",
 			4 => "Gift 4",
@@ -34,7 +34,7 @@ gifts = Hash[1 => "Gift 1",
 			7 => "Gift 7",
 			8 => "Gift 8",
 			9 => "Gift 9",
-			10 => "Gift 10",]
+			10 => "Gift 10",}
 			puts"Enter a number in 1 - 10 to get your gift"
 n=gets.to_i
 if !(n<0&& n>10)

@@ -30,29 +30,29 @@
 #                        Thomas
 
 
-class Father  
-  # def initialize  
-  #   puts 'I am the Father.'  
-  # end  
-  def fatherName
-    puts "Thomas "
+# class Father  
+#   # def initialize  
+#   #   puts 'I am the Father.'  
+#   # end  
+#   def fatherName
+#     puts "Thomas "
     
-  end
-  # define fatherName --> father name is 'Thomas' . 
-end  
+#   end
+#   # define fatherName --> father name is 'Thomas' . 
+# end  
 
 
-class Mother < Father
-  # def initialize  
-  #   puts 'I am the Mother.'  
-  # end
+# class Mother < Father
+#   # def initialize  
+#   #   puts 'I am the Mother.'  
+#   # end
 
-  # define motherName -> mother's name is Martha
-  def mother_name
-    print "martha "
-  end
+#   # define motherName -> mother's name is Martha
+#   def mother_name
+#     print "martha "
+#   end
 
-end  
+# end  
 
 # class Son inherits his last name from his Father  
 # class Son < Father 
@@ -70,10 +70,19 @@ end
 #     Print firstName motherName fatherName 
 #   end
 # end
-
+class Parents
+  def fatherName
+    puts "Thomas "
+  end
+  def mother_name
+    print "martha "
+  end
+  
+  
+end
 
 # class Son is sub-class of Mother   
-class Son < Mother
+class Son < Parents   
   def initialize
     
     puts "My name is Bruce Wayne"  
@@ -95,7 +104,7 @@ class Son < Mother
   def fullName
     # Print 'My name is Bruce Martha Thomas'
     
-    print "y full name - "
+    print "your full name - "
     firstName
     mother_name
     lastName
