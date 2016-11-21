@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="pId" class="pClass">Original text</p>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	jQuery('.pClass').click(function(){
+		jQuery('.pClass').css('color','white').css('background','green');
+	});
+	jQuery('.pClass').mouseenter(function(){
+		jQuery('.pClass').css('color','white').css('background','red');
+	});
+	
+
+</script>
+</body>
+</html>

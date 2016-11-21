@@ -1,0 +1,15 @@
+<%= form_for :company, url: companies_path(@company, method: :post) do |f| %>
+  <p>
+    <%= f.label :company_name %><br>
+    <%= f.text_field :company_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :company_city %><br>
+    <%= f.text_field :company_city %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

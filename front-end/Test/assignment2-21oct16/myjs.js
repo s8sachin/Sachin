@@ -6,15 +6,6 @@ function texthide(){
 }
 $(document).ready(function(){
 	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
@@ -22,6 +13,7 @@ $(document).ready(function(){
 	});
 	
 });
+
 
 // changing button color in home page
 $(".btnclr1").mouseover(function(){
@@ -44,34 +36,10 @@ $(".btnclr3").mouseover(function(){
 $(".btnclr3").mouseout(function(){
 	$(".btnclr3").css("color","#e4702f").css("background-color","#fff").css("border-color","#e4702f");
 });
-
-
-
-$(".homenav").click(function(){
-	jQuery('.homenav').addClass('active');
-	jQuery('.home').show();
-	jQuery('.about').hide();
-	jQuery('.aboutnav').show();
-
-});
-$(".aboutnav").click(function(){
-	jQuery('.home').hide();
-	jQuery('.about').show();
-	jQuery('.aboutnav').hide();
-	jQuery('.homenav').removeClass("active");
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
 });
 
-$(".abtRedirect").click(function(){
-	jQuery('.home').hide();
-	jQuery('.about').show();
-	jQuery('.aboutnav').hide();
-	jQuery('.homenav').removeClass("active");
-});
-$(".homeimg").click(function(){
-	jQuery('.homenav').addClass('active');
-	jQuery('.home').show();
-	jQuery('.about').hide();
-	jQuery('.aboutnav').show();
 
-});
+
 

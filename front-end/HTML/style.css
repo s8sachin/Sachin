@@ -1,0 +1,16 @@
+
+table  {background: #ccc; border: 1px solid red}
+ol li {text-align: center}
+.size{color: white; font-size: larger;}
+#newid{padding: 60px; color: red ; font-size: larger;}
+
+#para{text-align: justify; letter-spacing: 5px; word-spacing: 10px; text-indent: 1cm; 
+	text-decoration: underline; margin-top: 10px; margin-left: 20px}
+
+
+
+a:link{color:#100000; }
+a:visited{color: #00660; opacity: 1}
+a:hover{color:red;}
+ul~p{color: red}
+img { float: left; margin: 0 0 10px 10px;}

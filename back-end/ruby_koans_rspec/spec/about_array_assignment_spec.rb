@@ -4,7 +4,8 @@ describe "Array Assignment" do
 
   it 'should demonstrate non-parallel assignment' do
     names = ["John", "Smith"]
-    names.should eql __
+    names.should eql ["John", "Smith"]
+
   end
 
   it 'should demonstrate parallel assignment' do

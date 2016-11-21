@@ -1,0 +1,15 @@
+<h1>Listing all companies</h1>
+<table  border="solid ">
+	<tr>
+		<th>Company Name</th>
+		<th>Company City</th>
+	</tr>
+	<% @companies.each do |company| %>
+	<tr>
+		<td><%= company.company_name %></td>
+		<td><%= company.company_city %></td>
+		<td><%= link_to "list employees", company_employees_path(company) %> </td>
+		<td><%= link_to "Create employee", new_company_employee_path(company) %> </td>
+	</tr>
+	<% end %>
+</table>

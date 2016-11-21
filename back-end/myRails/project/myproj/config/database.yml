@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  database: employeeDetailsDev
+  username: postgres
+  password: password
+  port: 5432
+
+  # development:
+  # adapter: postgresql
+  # database: employeeDetailsDev
+  # username: postgres
+  # password: password
+  # port: 5432

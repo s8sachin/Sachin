@@ -1,10 +1,12 @@
-@media (min-width: 768px){
-.navbar-nav{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
+
+.eabout{
+  font-weight: 900;color:#e4702f;
 }
+/*.headin{
+     font-size: -webkit-xxx-large; font-weight: 800;
+}*/
+
+ 
 .more{
   margin-top:20px;
 }  
@@ -12,9 +14,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.homeimg{
-      width: 170px;
-}
+
 .navbar {
   margin-bottom: 20px;
 }
@@ -50,15 +50,8 @@ body {
       border-color: #e4702f;
       color:#e4702f;
 } 
-.para{
-      text-align: justify;
-}
 
-@media only screen and (max-width: 1000px) {
-   .img-responsive {
-        width:100%;
-    }
-}
+
 .footer {
   position: relative;
   background-color: hsla(0, 0%, 50%, 0.21);
@@ -79,18 +72,6 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
-/*.footer{
-         background-color: hsla(0, 0%, 50%, 0.21);
-
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
-
-}
-*/
 
 .search-form .form-group {
   float: right !important;
@@ -182,4 +163,19 @@ background-color: #e4702f;
   line-height: 1;
   letter-spacing: -1px;
 }
+ul{
+  -webkit-padding-start:0px;
+}
+.homorigin{
+    float: left;
+    margin: 0 20px 20px 0;
+}
 
+.para{
+    text-align: justify;
+    text-indent: 2em;
+}
+.dropdown-menu{
+  width: 100%;
+  text-align: center;
+}

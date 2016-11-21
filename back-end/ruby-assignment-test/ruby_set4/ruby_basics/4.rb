@@ -27,26 +27,37 @@ class Employee<Person
 	
 	
 end
-class Ceo<Employee
+class Ceo<Person
 	
 	
 	
 end
-class President<Employee
+class President<Person
 	
 	
 	
 end
-class Staff<Employee
+class Staff<Person
 	
 	
 	
 end
-class Security<Employee
+class Security<Person
 	
 	
 	
 end
 obj=Ceo.new
-obj.details("q1","raj","mahajan","20","mysore","karnataka")
+obj.details("q1","CEO","mahajan","20","mysore","karnataka")
+
+obj=President.new
+obj.details("q1","president","ram","20","mysore","karnataka")
+
+obj=Staff.new
+obj.details("q1","Staff","raj","20","mysore","karnataka")
+
+obj=Security.new
+obj.details("q1","Security","john","20","mysore","karnataka")
+
+
 
