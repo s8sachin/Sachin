@@ -1,0 +1,17 @@
+<h1>Listing all Employees</h1>
+<table  border="solid ">
+	<tr>
+		<th>Name</th>
+		<th>Company City</th>
+	</tr>
+
+	<% @employees.each do |employee| %>
+	<tr>
+		<td><%= employee.employee_name %></td>
+		<td><%= employee.employee_age %></td>
+		<td><%= employee.employee_city %></td>
+
+		
+	</tr>
+	<% end %>
+</table>

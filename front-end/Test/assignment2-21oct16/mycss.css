@@ -1,0 +1,181 @@
+
+.eabout{
+  font-weight: 900;color:#e4702f;
+}
+/*.headin{
+     font-size: -webkit-xxx-large; font-weight: 800;
+}*/
+
+ 
+.more{
+  margin-top:20px;
+}  
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+#contactSocial{
+  width: 25px;
+  padding-left: 1px;
+}
+.carousel-indicators-numbers li {
+  text-indent: 0;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color: #999;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  background-color: #e4702f;
+}
+
+.scrollimg{
+  width:45px;
+  margin-top: 10px;
+}
+.btnclr1,.btnclr2,.btnclr3{
+      border-color: #e4702f;
+      color:#e4702f;
+} 
+
+
+.footer {
+  position: relative;
+  background-color: hsla(0, 0%, 50%, 0.21);
+  width: 100%;
+  bottom: 0;
+ 
+  /* Set the fixed height of the footer here */
+ /* height: 60px;*/
+  padding:25px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footrow{
+  padding:15px;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #e4702f;
+  left: initial;
+  font-size: 14px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+/*color: #000;*/  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+/*color: black;*/ /*BACKGROUND color for active*/
+color: #e4702f;
+background-color: #e4702f;
+}
+
+  .navbar-default {
+    background-color: #e4702f;
+   
+}
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    /*color: #262626;*/
+   color: #e4702f;
+  background-color: #e4702f;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   /*color: #e4702f;*/
+   color: #555555 /*Change active text color here*/
+    }
+
+    .featurette-heading {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+ul{
+  -webkit-padding-start:0px;
+}
+.homorigin{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.para{
+    text-align: justify;
+    text-indent: 2em;
+}
+.dropdown-menu{
+  width: 100%;
+  text-align: center;
+}

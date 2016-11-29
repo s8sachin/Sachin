@@ -1,0 +1,18 @@
+<h1>Edit page</h1>
+<%= form_for :book,url: book_edit_path(@book), method: :put do |f| %>
+<p>
+	<%= f.label :book_name %><br>
+	<%= f.text_field :book_name %>
+</p>
+<p>
+	<%= f.label :author %><br>
+	<%= f.text_field :author %>
+</p>
+<p>
+	<%= f.label :publication %><br>
+	<%= f.text_field :publication %>
+</p>
+<p>
+	<%= f.submit %>
+</p>
+<% end %>

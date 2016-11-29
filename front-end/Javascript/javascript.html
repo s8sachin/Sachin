@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<script type="text/javascript"> 
+	//var y=add(4,5);
+	function myFunc(){
+	var x= document.getElementById("mySelect").value;
+	document.getElementById("out").innerHTML="your selection is "+x;
+}
+</script>
+<body>
+	<h1>heading</h1>
+		<!-- <p id="demo">paragraph</p> -->
+	<select id="mySelect" onchange="myFunc()">
+	<option value="cars">car</option>
+	<option value="bike">bike</option>
+	<option value="helicopter">helicopter</option>
+	</select>
+	<p id="out"></p>
+</body>
+
+</html>

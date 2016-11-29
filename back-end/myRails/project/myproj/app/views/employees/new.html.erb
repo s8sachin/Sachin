@@ -1,0 +1,18 @@
+<%= form_for @employees,url:new_employee_path do |f| %>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :fname %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :lname %>
+  </p>
+   <p>
+    <%= f.label :eid %><br>
+    <%= f.text_field :eid %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

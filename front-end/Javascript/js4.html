@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="run()">view details</button>
+<p id="name" ></p>
+<p id="place" ></p>
+<script type="text/javascript">
+	function run(){
+		var data = {
+		"name" : "Sachin",
+		"place" : "Mysore",
+		}
+		document.getElementById('name').innerHTML = 'Name : '+data.name;
+		document.getElementById('place').innerHTML = 'Place : '+data.place;
+
+	}
+</script>
+</body>
+</html>

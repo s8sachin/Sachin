@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- <img src="1.jpg" onmouseover="change(this)" onmouseout="revert(this)"> -->
+
+
+Enter name: <input type="text" id="fname" onkeyup="myFunction()">
+
+
+<script type="text/javascript">
+	// function change(x){
+	// 	x.src='2.jpg';
+	// }
+	// function revert(x){
+	// 	x.src='1.jpg'
+	// }
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+
+}
+</script>
+
+</body>
+</html>

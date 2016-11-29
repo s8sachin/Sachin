@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ol class="main">
+	<li class="a">1</li>
+	<li>2</li>
+	<li class="b">3</li>
+	<li>4</li>
+</ol>
+<select class="selection">
+	<option value="hello">hello text</option>
+	<option value="hi">hi</option>
+</select>
+<button id="sub">check output</button>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	jQuery('.main')
+	.find('.a')
+	.css("color","red")
+	.end()
+	.find('.b')
+	.css('color','green');
+
+	jQuery('li.a').replaceWith("<p>Hello</p>");
+
+	jQuery('selection').click(function(){
+		alert(jQuery('.selection').val(););
+		alert(jQuery('.selection. :selected').text(););
+		
+	});
+
+	</script>
+
+</body>
+</html>
