@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+<script type="text/javascript" src="directory.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release"></script>
+<style type="text/css">
+	.under-fifty{
+		background-color: lightgrey;
+		color:black;
+	}
+	.over-fifty{
+		background-color: powderblue;
+	}
+	.listshow{
+		display: block;
+	}
+	.listhide{
+		display: none;
+	}
+	ul{
+		list-style: none;
+	}
+	li{
+		display: flex;
+		margin-bottom: 20px;
+	}
+	li span{
+		display: inline-block;
+	}
+	img{
+		border-radius: 50%;
+		margin-right: 10px;
+		width: 150px	;
+		height: auto;
+	}
+	ul.ng-enter {
+		transition:0.3s ease all;
+		opacity:0;
+		transfrom:translateX(-100%);
+	}
+	ul.ng-enter.ng-enter-active {
+		opacity:1;
+		transform:translateX(0);
+	}
+	ul.ng-leave {
+		transition:0.3s ease all;
+		opacity:1;
+		transfrom:translateX(0);    
+	}
+	ul.ng-leave.ng-leave-active {
+		opacity:0;
+		transform:translateX(-100%);
+	}
+</style>
+<body style="background-color:{{name}}" >
+	<div ng-app="directoryApp" ng-controller="directoryController as dirlist">
+		<!-- Enter input : <input type='text' ng-model="name" placeholder="Your color"> -->
+		<!-- <h1>{{name}}</h1> -->
+		<!-- <button ng-click=" set(flag)" ng-class="flag == true ? 'listshow' : 'listhide'">hide list</button>
+		<button ng-click=" set(flag)" ng-class="flag == true ? 'listhide' : 'listshow'">show list</button> -->
+
+		<!-- <ul ng-class=" flag == true ? 'listshow' : 'listhide' " >  -->
+		<!-- <li ng-repeat="items in dirlist.list | filter : dirlist.name | limitTo : 3 ">{{items.name}} : {{items.age}}</li> -->
+		<!-- <li ng-repeat="items in dirlist.list | orderBy : 'age'" ng-class="{'over-fifty':items.age>50,'under-fifty':items.age<50}">{{items.name | uppercase}} :  {{items.age | currency:	$:0}}</li> -->
+			<!-- <li ng-repeat="items in dirlist.list | orderBy : 'age'"  ng-class="items.age>50 ? 'over-fifty' : 'under-fifty' "  >{{items.name | uppercase}} :  {{items.age | currency:	$:0}}</li>
+		</ul> -->
+
+		<ul ng-if="dirlist.toggle">
+			<li ng-repeat="items in dirlist.list | orderBy : 'age'"  >{{items.name | uppercase}} :  {{items.age | currency:	$:0}} : <img ng-src="{{items.img}}" ></li>
+		</ul>
+		<button ng-if="!dirlist.toggle" ng-click="dirlist.flagToggle()">show</button>
+		<button ng-if="dirlist.toggle" ng-click="dirlist.flagToggle()">hide</button>
+
+
+		<!-- <button ng-click=" flag = true">show list</button> -->
+		<!-- <button ng-click="capture('sachin')">Submit</button> -->
+
+		<form ng-submit="addEntity()">
+			<input type="text" placeholder="enter name" ng-model="dirlist.name">
+			<input type="number" placeholder="enter age" ng-model="dirlist.age">
+			<input type="submit" value="submit">
+		</form>
+
+		<div>
+			<button ng-disabled="dirlist.i==0" ng-click="dirlist.previmage()">Previous</button>
+			<img  ng-src="{{dirlist.a.image}}">
+			<button ng-disabled="dirlist.i==dirlist.list.length" ng-click="dirlist.nextimage()">next</button>
+		</div>
+
+
+
+
+	</div>
+
+
+</body>
+</html>
