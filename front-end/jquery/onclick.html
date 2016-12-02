@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+<button id='hideText' onclick='hideText()'>Hide text</button>
+<button id='hideText' onclick='showText()' style="display:none">show text</button>	
+<div id="text" style="background-color:yellow;">
+	This is yellow line
+</div>
+<script type="text/javascript">
+	function hideText() {
+		document.getElementById('text').style.display='none';
+		document.getElementById(' hideText').style.display='block';
+		document.getElementById(' showText').style.display='none';
+		
+	}
+function showText() {
+		document.getElementById('text').style.display='block';
+		document.getElementById(' hideText').style.display='block';
+		document.getElementById(' showText').style.display='none';
+		
+	}	
+</script>
+
+
+ 
+      
+
+</body>
+</html>

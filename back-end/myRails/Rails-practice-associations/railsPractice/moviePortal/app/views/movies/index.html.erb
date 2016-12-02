@@ -1,0 +1,19 @@
+<h1>Listing all movies</h1>
+<table  border="solid ">
+	<tr>
+		<th>movie title</th>
+		<th>movie year</th>
+		<th>movie rating</th>
+		<th>movie language</th>
+	</tr>
+	<% @movies.each do |movie| %>
+	<tr>
+		<td><%= movie.title %></td>
+		<td><%= movie.year %></td>
+		<td><%= movie.rating %></td>
+		<td><%= movie.language %></td>
+		<td><%= link_to "list users" , movie_users_path(movie)%> </td>
+		<td><%= link_to "Create users", new_movie_user_path(movie) %> </td>
+	</tr>
+	<% end %>
+</table>

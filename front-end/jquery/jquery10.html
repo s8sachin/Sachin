@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	
+<ul>
+<li>Name</li>
+<li>Remove</li>
+<li>Name</li>
+<li>Remove</li>
+<li>Remove</li>
+<li>Name</li>
+</ul>
+<script type="text/javascript">
+<ul>
+    <li class="fi">First</li>
+    <li id="se">Second</li>
+    <li class="th">Third</li>
+    <li>Fourth</li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+<style>
+$("ul").find(".fi").css("background","red").end().find(".th").css("background","blue");
+$("ul").find("#se").replaceWith("<li>removed</li>");
+</script>
+
+	</style>
+</script>
+</body>
+</html>

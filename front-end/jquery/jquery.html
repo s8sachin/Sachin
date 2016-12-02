@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>jquery</title>
+	<title>jQuery</title>
 </head>
-<body bgcolor="powderblue">
-<div class="di">old content</div>
-<a href="#" class="link">link</a>
-<div>1</div>
-<div>2</div>
+<body>
+<div>old content</div>
+<div>old content</div>
+<div>old content</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script >
+jQuery('div').text('new content');
+alert('jQuery'+jQuery.fn.jquery);
+jQuery('div').hide();
+jQuery('div').addClass("updatedContent");
+jQuery('div').show();
+jQuery('div').hide().text('new content').addClass("updatedContent").show();
+
+jQuery('div')
+.hide()
+.text('new content')
+.addClass("updatedContent")
+.show()
 	
-	// alert("version "+jQuery.fn.jquery);
-	// jQuery("div")
-	// 	.text("new")
-	// 	.show()
-	// 	.addClass("updatedContent");
-		//alert("page contains" + jQuery("div.di").length + "<div> elements, " +jQuery(document.body).attr("bgcolor") + " as background");
-		jQuery("a.link").attr("target","https://www.google.co.in");
 </script>
+
+
 </body>
 </html>

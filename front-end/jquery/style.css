@@ -1,0 +1,73 @@
+h1{
+color: red;}
+.left-section{
+	background-color: blue; color: #fff;padding:20px;  
+
+}
+.middle-section{
+	background-color: red;color: #fff;padding:20px; 
+}
+.right-section{
+	background-color: green;color: #fff;padding:20px;
+
+}
+.left-section1{
+	background-color: green; color: #fff;padding:20px; } 
+.right-section1{
+	background-color: pink;color: #fff;padding:20px;
+
+}
+
+.form-group1{
+	color: yellow;
+}
+.form1{
+	background-color:#AEA79F;
+	padding: 20px;
+}
+/*Mobile portrait*/
+ @media (max-width: 480px) { 
+ h1{
+	font-size:8px;
+	color: green;
+}
+}
+
+ 
+/*mobile landscape*/
+@media (min-width: 481px) and (max-width: 599px) { 
+
+h1{
+	font-size:12px;
+	color: green;
+}
+}
+/* small tablet portrait*/
+@media (min-width: 600px) and (max-width: 767px) {
+	h1{
+		font-size:24px;
+		color: black;
+	}
+}
+
+/*small tablet landscape*/
+@media (min-width: 768px) and (max-width: 959px) { 
+h1{
+	font-size: 38px;
+	color: yellow;
+}
+}
+
+/*Tablet landscape (1024x768)*/
+
+@media (min-width: 960px) and (max-width: 1199px) { 
+h1{
+	font-size: 60px;
+	color: blue;
+}
+
+}
+
+
+
+
