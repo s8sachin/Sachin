@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+
+Meet codeman.He is our local hero.
+He is not just a superhero.He is our codeman.
+He codes all the data.IF he is there in our office all the code gets displayed by itself.
+So let us all be familiar with his coding work and his uses.
+He has helped us for coding and development.
+=======
+If I were a superhero for a day I would have travelled all aroud the world.
+Would show off my flying abilities.
+Would request
+ people to make this world a better place to live by spreading the importance of peace. 
+>>>>>>> 049f6185e217b4f72049c7b72064fe1a6266750a

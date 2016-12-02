@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addition of two numbers</title>
+</head>
+<body>
+<p>Select a new flower from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="rose">rose</option>
+  <option value="jasmine">jasmine</option>
+  <option value="lilly">lilly</option>
+  <option value="sunflower">sunflower</option>
+</select>
+
+<p>When you select a new flower, a function is triggered which outputs the value of the selected flower.</p>
+
+<p id="demo"></p>
+
+<div class="flower">
+  <p>P element in first div with class="flower". Div's index is 0.</p>
+</div>
+<div class="flower color">
+  <p>P element in second div with class="flower color". Div's index is 1.</p>
+</div>
+<p>Click the button to change the background color of the first div element with the classes "flower" and "color".</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+    var x =document.getElementsByClassName("flower color");
+    x[0].style.backgroundColor = "red";
+}
+    document.getElementById("demo").innerHTML = "You selected: " +x;
+
+
+// <button onclick='document.getElementById("demo").innerHTML=Date()'>The time is?</button>
+
+// <body>
+// <script>
+// function displayDate() {
+// document.getElementById("demo").innerHTML = Date()           
+// }
+// console.log(a);
+// debugger;
+</script>
+
+</body>
+</html>

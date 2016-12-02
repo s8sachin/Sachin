@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["first name"].value;
+    var y = document.forms["myForm"]["last name"].value;
+    var z = document.forms["myForm"]["company"].value;
+    
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+<body>
+<form>
+	<label>First name:</label><input id="first name=" type="text"></br>
+	<label>Second name:></label><input id="last name" type="text"></br>
+	<label>Age:></label>
+	<select>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+  </select>
+  <br><br>
+</select>
+	<label>Company:></label><input id="company" type="text"></br>
+	<input type="submit">
+</form>
+
+
+
+</body>
+</html>

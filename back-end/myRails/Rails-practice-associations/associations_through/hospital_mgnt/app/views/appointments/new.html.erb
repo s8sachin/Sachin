@@ -1,0 +1,15 @@
+<div class="myclass">
+<h1>New Appointment</h1>
+<%= form_for :appointment,url:  patient_appointments_path  do |f| %>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+  <div class="">
+    <%= f.label :doctor %><br />
+    <%= select_tag 'doctor_id', options_for_select(@doctors.collect{ |u| [u.name, u.id] }) %>
+  </div>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>

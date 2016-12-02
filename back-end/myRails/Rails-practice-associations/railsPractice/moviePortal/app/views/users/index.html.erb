@@ -1,0 +1,19 @@
+<h1>Listing users </h1>
+<table  border="solid ">
+	<tr>
+		<th>name</th>
+		<th>age</th>
+		<th>role</th>
+		<th>gender</th>
+	</tr>
+	<% @users.each do |movie| %>
+	<tr>
+		<td><%= movie.name %></td>
+		<td><%= movie.age %></td>
+		<td><%= movie.role %></td>
+		<td><%= movie.gender %></td>
+		<td><%= link_to "edit" %> </td>
+		<td><%= link_to "destroy" %> </td>
+	</tr>
+	<% end %>
+</table>
